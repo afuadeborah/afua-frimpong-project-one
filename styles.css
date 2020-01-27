@@ -657,9 +657,12 @@ input {
     margin-bottom: 10px;
 }
 
-span .decor {
-    display: inline;
-    margin: 0 1px 0 5px;
+.bottom-nav li {
+    border-left: 1px solid #EAEDF4;
+}
+
+.bottom-nav li:first-of-type {
+    border-left: none;
 }
 
 .contact,
