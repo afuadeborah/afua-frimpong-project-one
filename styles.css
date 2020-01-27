@@ -1,0 +1,749 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {
+    visibility: hidden; 
+    display: block; 
+    font-size: 0; 
+    content: ''; 
+    clear: both; 
+    height: 0; 
+}
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* -----STRIP CLUB----- */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: 'Cabin';
+    font-size: 1.8rem;
+    line-height: 29px;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+span .decor{
+    display: none;
+    color: #F8F8F8;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto; 
+}
+
+
+.yellow{
+    font-weight: 500;
+    font-family: 'Cabin';
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+    padding: 10px 30px;
+    background-color:#FDC800;
+    color: #232323;
+    border-radius: 1px;
+    border: 1px solid #FDC800;
+}
+
+.yellow,
+h3,
+h4,
+.black-container p,
+nav a,
+.title-container p  {
+    text-transform: uppercase;
+}
+
+/* ----- HEADER ----- */
+
+header{
+    background-image: url(./tasty-assets/asset-1.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+.top-bar p {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 100;
+}
+
+
+/* ----- NAV BAR ------ */
+/* while dry-ing up the code, I wasn't sure whether or not to dry by each section, or dry the site overall (before hitting media queries and with respect to the cascade */
+
+
+.top-bar {
+    padding: 10px;
+}
+
+.top-bar p,
+.nav-menu li,
+.black-container li,
+.pics,
+.top-squares .feat-container,
+.top-squares .mid-container,
+.girl-container,
+.chef-container,
+.contact,
+.pages,
+.recent-posts,
+input,
+footer .yellow {
+    float: left;
+
+}
+
+nav,
+.icon-container,
+.fa-bars,
+.bottom-squares .feat-container,
+.bottom-squares .mid-container,
+.form {
+    float: right;
+}
+
+
+.top-bar,
+.peekaboo,
+footer,
+.bottom {
+    clear: both;
+}
+
+.top-bar p {
+    width: 30%;
+    margin-top: 15px;
+    font-size: 4.2rem;
+}
+
+.top-bar p,
+.chef-container,
+.chef-container p,
+footer .wrapper {
+    text-align: left;
+}
+
+nav,
+.form {
+    width: 40%;
+}
+
+.nav-menu li {
+    width: 25%;
+}
+
+.title-container,
+.pics-container,
+.pics {
+    margin: 0;
+}
+
+.title-container {
+    padding-top: 200px;
+}
+
+.icon-container,
+header .wrapper {
+    position: relative;
+}
+
+.icon-container {
+    padding: 0 40px;
+    bottom: 150px;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+
+.title-container p,
+.form {
+    margin-bottom: 40px;
+}
+
+.title-container p {
+    letter-spacing: 0.5px;
+}
+
+.black-container p{
+    letter-spacing: 0.8px;
+}
+
+nav a,
+.title-container p,
+h3 {
+    font-weight: 600;
+}
+
+nav a,
+.title-container p,
+.fa-bars {
+    color: #232323;
+}
+
+.fab {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+.fab,
+.fa-bars:hover {
+    color: #FDC800;
+}
+
+.fas {
+    font-size: 3.5rem;
+}
+
+.fas:hover {
+    transform: scale(1.1);
+}
+
+.fa-bars {
+    visibility: hidden;
+}
+
+
+/* ----- LIL GREY BOX ----- */
+.grey {
+    background-color: #EAEDF4;
+    
+}
+
+.grey,
+.feat-container,
+.mid-container,
+.mid-container img {
+    height: 50vh;
+}
+
+.grey .wrapper {
+    padding-top: 25px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h2,
+.grey button {
+    margin: 20px 0;
+}
+
+
+/* ----- LIL BLACK BOX ----- */
+.black {
+    padding: 50px;
+}
+
+.black,
+footer {
+    background-color: #232323;
+}
+
+.black-container li{
+    color: #fff;
+    width: calc(100%/3);
+    margin-top: 15px;
+}
+
+
+/* ----- 3 PICTURES ----- */
+.pics {
+    margin: 2%;
+    width: 29%;
+}
+
+.pics-container {
+    margin: 40px 70px;
+}
+
+
+/* ----- 4 SQUARE ----- */
+.tips-and-recipes {
+    margin-bottom: 50px;
+}
+
+.tips-and-recipes,
+.cooking-container {
+    height: 100vh;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+.feat-container p {
+    padding: 10px 30%;
+}
+
+.feat-container,
+.mid-container {
+    background-color: #EAEDF4;
+    width: 50%;
+}
+
+
+/* ------- GIRL IN WATER ----- */
+.peekaboo {
+    padding: 70px;
+}
+
+.girl-container {
+    width: calc(35% - 40px);
+    margin-right: 40px;
+}
+
+.chef-container {
+    width: 65%;
+}
+
+h3,
+.chef-container h2,
+.chef-container p {
+    margin-bottom: 20px;
+}
+
+
+/* ----- FOOTER ------ */
+footer {
+    background-color: #232323;
+    padding: 25px 0;
+}
+
+.contact,
+.pages,
+.recent-posts {
+    width: 20%;
+}
+
+footer p,
+footer a {
+    font-size: 1.5rem;
+}
+
+footer .wrapper {
+    margin-top: 25px;
+}
+
+footer .yellow {
+    padding: 10px 15px;
+    width: 30%;
+}
+
+input {
+    width: 70%;
+    padding-left: 15px;
+}
+
+input:focus {
+    border: 2px solid #FDC800;
+}
+
+input,
+footer .yellow {
+    height: 35px;
+}
+
+footer .yellow,
+::placeholder {
+    font-size: 1.3rem;
+}
+
+.bottom {
+    background-color: #000;
+}
+
+footer p,
+footer a,
+h4,
+.bottom {
+    color: #F8F8F8;
+}
+
+
+
+/* --- MEDIA QUERIES BEGIN --- */
+@media (max-width: 960px){
+
+    .fab {
+    color: #232323;
+    }
+
+    .feat-container p{
+        padding: 10px 10%;
+    }
+
+    .peekaboo {
+        padding: 0 50px 50px 0;
+    }
+
+    footer .yellow {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 770px){
+/* HEADER */
+.title-container {
+    left:20%;
+}
+
+.title-container p {
+    margin-bottom: 70px;
+}
+
+.nav-menu li a {
+    font-size: 1.5rem;
+}
+
+
+/* 3 PICS */
+.pics {
+    margin: 0 2px;
+    width: calc(33% - 6px);
+}
+
+
+/* FOUR SQUARE */
+.feat-container,
+.mid-container {
+    height: 50vh;
+}
+
+
+/* MEET THE COOK */
+    .peekaboo {
+        margin-top: 670px;
+    }
+
+    .feat-container,
+    .mid-container,
+    .girl-container,
+    .chef-container,
+    input,
+    footer .yellow {
+        float: none;
+        width: 100%;
+    }
+
+    .chef-container {
+        text-align: center;
+    }
+
+    .girl-container {
+        margin: auto 0 30px auto;
+    }
+
+    .girl-container img {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
+    }
+
+
+    /* FOOTER */
+    .contact,
+    .pages,
+    .recent-posts {
+        width: 33%;
+        margin-bottom: 50px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    button [type="submit"] {
+        font-size: calc(1.2rem - 0.1vw);
+    }
+    
+    .contact,
+    .pages,
+    .recent-posts,
+    .form {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 650px){
+/* HEADER */
+nav{
+    width: 50%;
+}
+
+.nav-menu li a {
+    font-size: 1.3rem;
+}
+
+/* GREY */
+.grey {
+    height: auto;
+    padding-bottom: 30px;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+}
+
+@media (max-width: 450px){
+/* HEADER */
+nav a,
+.icon-container,
+.pics:last-of-type {
+    display: none;
+}
+
+nav .fa-bars{
+    visibility: visible;
+    margin-top: 10px;
+}
+
+.title-container {
+    left: 5%;
+}
+
+.title-container p,
+.black-container p {
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 10rem;
+}
+
+
+/* ABOUT TASTY */
+.grey {
+    height: auto;
+    padding: 45px 0;  
+}
+
+h2 {
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.grey p {
+    line-height: 1.9;
+    
+}
+
+
+/* BLACK CONTAINER */
+.black-container li {
+    float: none;
+    margin: 50px 0;
+}
+
+.black-container li,
+.contact,
+.pages  {
+    width: 100%;
+}
+
+.black-container p {
+    margin: 5px 0;
+}
+
+.fas {
+    font-size: 4rem;
+}
+
+
+/* GALLERY */
+.pics{ 
+    width: 50%;
+}
+
+.pics:last-of-type,
+.recent-posts {
+    display: none;
+}
+
+.pics-container,
+.pics{
+    margin: 0;
+}
+
+
+/* FOUR SQUARE */
+h3 {
+    font-size: 2.7rem;
+    font-weight: 510;
+}
+
+.feat-container p {
+    padding: 0 15% 5% 15%;
+}
+
+.feat-container {
+    height: 60vh;
+    padding-top: 50px;
+}
+
+.mid-container,
+.mid-container img {
+    height: 40vh;
+}
+
+/* MEET THE COOK */
+.peekaboo {
+    padding: 50px 0;
+    margin-top: 200px;
+}
+
+.girl-container {
+    margin-bottom: 50px;
+}
+
+
+/* FOOTER */
+footer .wrapper {
+    width: 90%;
+}
+
+footer .yellow,
+::placeholder {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+span .decor {
+    display: inline;
+    margin: 0 1px 0 5px;
+}
+
+.contact,
+.form {
+    margin-bottom: 30px;
+}
+
+.contact p,
+.pages li { 
+    float: left;
+}
+
+.contact p {
+    width: 50%;
+}
+
+.pages li {
+    width: 25%;
+}
+
+}
+
+/* thanks for reviewing my project! I would greatly appreciate feedback on the 4 square and footer nav secitions */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COLOUR CODES
+#FDC800
+#232323
+#EAEDF4
+#F8F8F8 */
+
+
+/* body {
+    background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
+  } */
+
+/* for when text breaks out of the container
+@media (max-height: 800px) and (max-width: 450px) {
+header {
+height: auto;
+}
+} */
+/* override the height setting for the element in question and set it to auto */
