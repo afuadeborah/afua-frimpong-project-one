@@ -108,8 +108,6 @@ h2,
 
 
 /* ----- NAV BAR ------ */
-/* while dry-ing up the code, I wasn't sure whether or not to dry by each section, or dry the site overall (before hitting media queries and with respect to the cascade */
-
 
 .top-bar {
     padding: 10px;
@@ -245,7 +243,7 @@ nav a,
 }
 
 
-/* ----- LIL GREY BOX ----- */
+/* ----- GREY BOX ----- */
 .grey {
     background-color: #EAEDF4;
     
@@ -272,7 +270,7 @@ h2,
 }
 
 
-/* ----- LIL BLACK BOX ----- */
+/* ----- BLACK BOX ----- */
 .black {
     padding: 50px;
 }
@@ -290,6 +288,11 @@ footer {
 
 
 /* ----- 3 PICTURES ----- */
+.gallery,
+.pics-container {
+    overflow: hidden;
+}
+
 .pics {
     margin: 2%;
     width: 29%;
@@ -427,36 +430,40 @@ h4,
 
 @media (max-width: 770px){
 /* HEADER */
-.title-container {
-    left:20%;
-}
+    .title-container {
+        left:20%;
+    }
 
-.title-container p {
-    margin-bottom: 70px;
-}
+    .title-container p {
+        margin-bottom: 70px;
+    }
 
-.nav-menu li a {
-    font-size: 1.5rem;
-}
+    .nav-menu li a {
+        font-size: 1.5rem;
+    }
 
 
 /* 3 PICS */
-.pics {
-    margin: 0 2px;
-    width: calc(33% - 6px);
-}
+    .pics {
+        margin: 0 2px;
+        width: calc(33% - 6px);
+    }
 
 
 /* FOUR SQUARE */
-.feat-container,
-.mid-container {
-    height: 50vh;
-}
+    .feat-container,
+    .mid-container {
+        height: 50vh;
+    }
+
+    .mid-container {
+        min-width: 100%;
+    }
 
 
 /* MEET THE COOK */
     .peekaboo {
-        margin-top: 670px;
+        padding: 70px 0;
     }
 
     .feat-container,
@@ -473,6 +480,10 @@ h4,
         text-align: center;
     }
 
+    .chef-container p {
+        text-align: center;
+    }
+
     .girl-container {
         margin: auto 0 30px auto;
     }
@@ -484,7 +495,7 @@ h4,
     }
 
 
-    /* FOOTER */
+/* FOOTER */
     .contact,
     .pages,
     .recent-posts {
@@ -499,7 +510,7 @@ h4,
     button [type="submit"] {
         font-size: calc(1.2rem - 0.1vw);
     }
-    
+
     .contact,
     .pages,
     .recent-posts,
@@ -511,242 +522,177 @@ h4,
 
 @media (max-width: 650px){
 /* HEADER */
-nav{
-    width: 50%;
-}
+    nav{
+        width: 50%;
+    }
 
-.nav-menu li a {
-    font-size: 1.3rem;
-}
+    .nav-menu li a {
+        font-size: 1.3rem;
+    }
 
 /* GREY */
-.grey {
-    height: auto;
-    padding-bottom: 30px;
-}
+    .grey {
+        height: auto;
+        padding-bottom: 30px;
+    }
 
-h3 {
-    padding-top: 30px;
-}
+    h3 {
+        padding-top: 30px;
+    }
 
 }
 
 @media (max-width: 450px){
 /* HEADER */
-nav a,
-.icon-container,
-.pics:last-of-type {
-    display: none;
-}
+    nav a,
+    .icon-container,
+    .pics:last-of-type {
+        display: none;
+    }
 
-nav .fa-bars{
-    visibility: visible;
-    margin-top: 10px;
-}
+    nav .fa-bars{
+        visibility: visible;
+        margin-top: 10px;
+    }
 
-.title-container {
-    left: 5%;
-}
+    .title-container {
+        left: 5%;
+    }
 
-.title-container p,
-.black-container p {
-    font-size: 2rem;
-}
+    .title-container p,
+    .black-container p {
+        font-size: 2rem;
+    }
 
-h1{
-    font-size: 10rem;
-}
+    h1{
+        font-size: 10rem;
+    }
 
 
 /* ABOUT TASTY */
-.grey {
-    height: auto;
-    padding: 45px 0;  
-}
+    .grey {
+        height: auto;
+        padding: 45px 0;  
+    }
 
-h2 {
-    font-size: 4rem;
-    margin-top: 0;
-}
+    h2 {
+        font-size: 4rem;
+        margin-top: 0;
+    }
 
-.grey p {
-    line-height: 1.9;
-    
-}
+    .grey p {
+        line-height: 1.9;
+        
+    }
 
 
 /* BLACK CONTAINER */
-.black-container li {
-    float: none;
-    margin: 50px 0;
-}
+    .black-container li {
+        float: none;
+        margin: 50px 0;
+    }
 
-.black-container li,
-.contact,
-.pages  {
-    width: 100%;
-}
+    .black-container li,
+    .contact,
+    .pages  {
+        width: 100%;
+    }
 
-.black-container p {
-    margin: 5px 0;
-}
+    .black-container p {
+        margin: 5px 0;
+    }
 
-.fas {
-    font-size: 4rem;
-}
+    .fas {
+        font-size: 4rem;
+    }
 
 
 /* GALLERY */
-.pics{ 
-    width: 50%;
-}
+    .pics{ 
+        width: 50%;
+    }
 
-.pics:last-of-type,
-.recent-posts {
-    display: none;
-}
+    .pics:last-of-type,
+    .recent-posts {
+        display: none;
+    }
 
-.pics-container,
-.pics{
-    margin: 0;
-}
+    .pics-container,
+    .pics{
+        margin: 0;
+    }
 
+    .
 
 /* FOUR SQUARE */
-h3 {
-    font-size: 2.7rem;
-    font-weight: 510;
-}
+    h3 {
+        font-size: 2.7rem;
+        font-weight: 510;
+    }
 
-.feat-container p {
-    padding: 0 15% 5% 15%;
-}
+    .feat-container p {
+        padding: 0 15% 5% 15%;
+    }
 
-.feat-container {
-    height: 60vh;
-    padding-top: 50px;
-}
+    .feat-container {
+        height: 60vh;
+        padding-top: 50px;
+    }
 
-.mid-container,
-.mid-container img {
-    height: 40vh;
-}
+    .mid-container,
+    .mid-container img {
+        height: 40vh;
+    }
 
 /* MEET THE COOK */
-.peekaboo {
-    padding: 50px 0;
-    margin-top: 200px;
+    .peekaboo {
+        padding: 50px 0;
+        margin-top: 200px;
+    }
+
+    .girl-container {
+        margin-bottom: 50px;
+    }
+
+
+    /* FOOTER */
+    footer .wrapper {
+        width: 90%;
+    }
+
+    footer .yellow,
+    ::placeholder {
+        text-align: center;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    .bottom-nav li {
+        border-left: 1px solid #EAEDF4;
+    }
+
+    .bottom-nav li:first-of-type {
+        border-left: none;
+    }
+
+    .contact,
+    .form {
+        margin-bottom: 30px;
+    }
+
+    .contact p,
+    .pages li { 
+        float: left;
+    }
+
+    .contact p {
+        width: 50%;
+    }
+
+    .pages li {
+        width: 25%;
+    }
+
 }
-
-.girl-container {
-    margin-bottom: 50px;
-}
-
-
-/* FOOTER */
-footer .wrapper {
-    width: 90%;
-}
-
-footer .yellow,
-::placeholder {
-    text-align: center;
-}
-
-input {
-    margin-bottom: 10px;
-}
-
-.bottom-nav li {
-    border-left: 1px solid #EAEDF4;
-}
-
-.bottom-nav li:first-of-type {
-    border-left: none;
-}
-
-.contact,
-.form {
-    margin-bottom: 30px;
-}
-
-.contact p,
-.pages li { 
-    float: left;
-}
-
-.contact p {
-    width: 50%;
-}
-
-.pages li {
-    width: 25%;
-}
-
-}
-
-/* thanks for reviewing my project! I would greatly appreciate feedback on the 4 square and footer nav secitions */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* COLOUR CODES
-#FDC800
-#232323
-#EAEDF4
-#F8F8F8 */
-
-
-/* body {
-    background: [background-color] [background-image] [background-position] [background-repeat] [background-attachment];
-  } */
-
-/* for when text breaks out of the container
-@media (max-height: 800px) and (max-width: 450px) {
-header {
-height: auto;
-}
-} */
-/* override the height setting for the element in question and set it to auto */
